@@ -1,14 +1,13 @@
 
 import { Image, Text, VStack } from '@chakra-ui/react';
 import '../../App.css';
-import QRcode from '../../assets/img/qrcode-component/qr-code.svg'
+import QRcode from '../../assets/img/qrcode-component/image-qr-code.png'
 
 function QRCodeCard() {
   return (
     <VStack className='card-container'>
       <VStack className='qr-box'>
-        <Image src={QRcode} alt="cardbg" />
-
+        <Image boxSize='340px' borderRadius='15px' src={QRcode} alt="cardbg" />
       </VStack>
       <VStack spacing={10}
         maxW='320px'
